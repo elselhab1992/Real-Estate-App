@@ -1,7 +1,7 @@
-import React from 'react';
+import logo from "../../assets/img/logo.svg";
 
-const Header = () => {
-  return <div>Header</div>;
-};
+function Header() {
+  return;
+}
 
 export default Header;
