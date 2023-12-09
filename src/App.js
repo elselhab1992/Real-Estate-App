@@ -2,7 +2,7 @@ import GlobalStyles from "./GlobalStyles";
 import Theme from "./Theme";
 import { BrowserRouter } from "react-router-dom";
 import Header from "./components/Header/Header";
-import { Hero, Search } from "./components";
+import { Hero, Search, HouseList, Footer } from "./components";
 const App = () => {
   return (
     <Theme>
@@ -11,6 +11,8 @@ const App = () => {
         <Header />
         <Hero />
         <Search />
+        <HouseList />
+        <Footer />
       </BrowserRouter>
     </Theme>
   );
