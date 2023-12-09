@@ -14,8 +14,8 @@ const theme = {
     small: "18px",
     normal: "20px",
     medium: "25px",
-    large: "30px",
-    xl: "50px",
+    large: "40px",
+    xl: "60px",
   },
   fontWeight: {
     extraLight: "200",

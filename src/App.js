@@ -1,12 +1,17 @@
 import GlobalStyles from "./GlobalStyles";
 import Theme from "./Theme";
-import { Header } from "./components/index";
-
+import { BrowserRouter } from "react-router-dom";
+import Header from "./components/Header/Header";
+import { Hero, Search } from "./components";
 const App = () => {
   return (
     <Theme>
       <GlobalStyles />
-      <Header />
+      <BrowserRouter>
+        <Header />
+        <Hero />
+        <Search />
+      </BrowserRouter>
     </Theme>
   );
 };

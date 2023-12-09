@@ -12,7 +12,16 @@ const GlobalStyles = createGlobalStyle`
         font-family: kanit,sans-serif;
         width: 100%;
         min-height: 100vh;
+        padding-top: 80px;
         text-transform: capitalize;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    ul {
+        list-style: none;
     }
 `;
 

@@ -1,7 +1,26 @@
-import React from 'react';
+import { useGlobalContext } from "../HouseContext/HouseContext";
+import {
+  CountryDropdown,
+  PriceRangeDropdown,
+  PropertyDropdown,
+} from "../index";
+import { Section, Container, SearchIcon, Icon } from "./SearchStyles";
 
 const Search = () => {
-  return <div>Search</div>;
+  const { handleSearch } = useGlobalContext();
+
+  return (
+    <Section>
+      <Container>
+        <CountryDropdown />
+        <PropertyDropdown />
+        <PriceRangeDropdown />
+        <SearchIcon>
+          <Icon onClick={handleSearch} />
+        </SearchIcon>
+      </Container>
+    </Section>
+  );
 };
 
 export default Search;
