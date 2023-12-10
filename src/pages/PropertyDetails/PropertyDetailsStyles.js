@@ -2,15 +2,14 @@ import styled from "styled-components";
 
 const Section = styled.section`
   padding: 3rem 18rem;
-  /* display: flex;
-  justify-content: space-around;
-  align-items: center; */
+
+  @media (min-width: 300px) {
+    padding: 1rem;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 3rem 18rem;
+  }
 `;
 
-const Container = styled.div`
-  /* border: 1px solid #ccc;
-  padding: 2rem 1rem;
-  width: 25%; */
-`;
-
-export { Section, Container };
+export { Section };

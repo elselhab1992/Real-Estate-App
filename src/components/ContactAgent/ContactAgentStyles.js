@@ -46,6 +46,7 @@ const BtnContainer = styled.div`
   justify-content: flex-start;
   align-items: center;
   gap: 1rem;
+  margin: auto;
 `;
 
 const MessageBtn = styled.button`

@@ -1,7 +1,7 @@
 import { useGlobalContext } from "../../components/HouseContext/HouseContext";
 import { useParams } from "react-router-dom";
-import { HouseDetails, ContactAgent } from "../../components";
-import { Section, Container } from "./PropertyDetailsStyles";
+import { HouseDetails } from "../../components";
+import { Section } from "./PropertyDetailsStyles";
 
 const PropertyDetails = () => {
   const { houses } = useGlobalContext();
@@ -14,11 +14,7 @@ const PropertyDetails = () => {
 
   return (
     <Section>
-      <div>
-        <HouseDetails house={house} />
-      </div>
-      {/* right */}
-      <Container>{/* <ContactAgent house={house} /> */}</Container>
+      <HouseDetails house={house} />
     </Section>
   );
 };

@@ -15,13 +15,13 @@ function Navbar({ click, handleClick }) {
             <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="/">Offers</NavLink>
           </li>
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="/">About</NavLink>
           </li>
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="/">Contact</NavLink>
           </li>
         </NavLinks>
       </nav>

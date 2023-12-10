@@ -15,6 +15,29 @@ const TopInfo = styled.div`
   align-items: center;
   margin-bottom: 1rem;
   width: 100%;
+
+  @media (min-width: 300px) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1200px) {
+    gap: 0;
+  }
 `;
 
 const Type = styled.div`
@@ -47,20 +70,68 @@ const MainContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+
+  @media (min-width: 300px) {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
 `;
 
 const ImgContainer = styled.div`
   width: 62%;
+
+  @media (min-width: 300px) {
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    width: 80%;
+  }
+
+  @media (min-width: 1200px) {
+    width: 64%;
+  }
 `;
 
 const Img = styled.img`
   width: 100%;
+  border-radius: 5px;
 `;
 
 const AgentContainer = styled.div`
   border: 1px solid #ccc;
   padding: 2rem 1rem;
   width: 25%;
+  border-radius: 5px;
+
+  @media (min-width: 300px) {
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+
+  @media (min-width: 1024px) {
+    width: 30%;
+  }
+
+  @media (min-width: 1200px) {
+    width: 25%;
+  }
 `;
 
 const RoomsContainer = styled.div`
