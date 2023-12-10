@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable array-callback-return */
 /* eslint-disable react/prop-types */
 import { useState, useContext, createContext, useEffect } from "react";
 import { housesData } from "../../data";
