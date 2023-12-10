@@ -15,8 +15,8 @@ const Search = () => {
         <CountryDropdown />
         <PropertyDropdown />
         <PriceRangeDropdown />
-        <SearchIcon>
-          <Icon onClick={handleSearch} />
+        <SearchIcon onClick={() => handleSearch()}>
+          <Icon />
         </SearchIcon>
       </Container>
     </Section>

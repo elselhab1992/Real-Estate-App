@@ -1,17 +1,19 @@
 import GlobalStyles from "./GlobalStyles";
 import Theme from "./Theme";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
-import { Hero, Search, HouseList, Footer } from "./components";
+import { Footer } from "./components";
+import { Home, PropertyDetails } from "./pages/index";
 const App = () => {
   return (
     <Theme>
       <GlobalStyles />
       <BrowserRouter>
         <Header />
-        <Hero />
-        <Search />
-        <HouseList />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/property/:id" element={<PropertyDetails />} />
+        </Routes>
         <Footer />
       </BrowserRouter>
     </Theme>

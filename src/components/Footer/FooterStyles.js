@@ -8,6 +8,8 @@ const FooterContainer = styled.footer`
   height: 80px;
   background-color: ${(props) => props.theme.colors.secondary};
   color: ${(props) => props.theme.colors.white};
+  position: sticky;
+  top: 100%;
 `;
 
 export { FooterContainer };

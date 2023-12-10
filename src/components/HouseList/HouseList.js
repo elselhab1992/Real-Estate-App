@@ -1,18 +1,36 @@
 import { useGlobalContext } from "../HouseContext/HouseContext";
 import { House } from "../index";
-import { Container } from "./HouseListStyles";
+import { Section, Loading, Div } from "./HouseListStyles";
+import { Link } from "react-router-dom";
 
 const HouseList = () => {
-  const { houses } = useGlobalContext();
+  const { houses, loading } = useGlobalContext();
+
+  if (loading) {
+    return (
+      <Div>
+        <Loading />
+      </Div>
+    );
+  }
+  if (houses.length < 1) {
+    return (
+      <Div>
+        <h2>Sorry, Nothing Found</h2>
+      </Div>
+    );
+  }
 
   return (
-    <section>
-      <Container>
-        {houses.map((house) => {
-          return <House house={house} key={house.id} />;
-        })}
-      </Container>
-    </section>
+    <Section>
+      {houses.map((house) => {
+        return (
+          <Link to={`/property/${house.id}`} key={house.id}>
+            <House house={house} />
+          </Link>
+        );
+      })}
+    </Section>
   );
 };
 

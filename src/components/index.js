@@ -8,6 +8,8 @@ import Search from "./Search/Search";
 import CountryDropdown from "./CountryDropdown/CountryDropdown";
 import PriceRangeDropdown from "./PriceRangeDropdown/PriceRangeDropdown";
 import PropertyDropdown from "./PropertyDropdown/PropertyDropdown";
+import HouseDetails from "./HouseDetails/HouseDetails";
+import ContactAgent from "./ContactAgent/ContactAgent";
 
 export {
   Navbar,
@@ -20,4 +22,6 @@ export {
   CountryDropdown,
   PriceRangeDropdown,
   PropertyDropdown,
+  HouseDetails,
+  ContactAgent,
 };

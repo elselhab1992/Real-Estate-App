@@ -1,13 +1,14 @@
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../../../assets/img/logo.svg";
 import { Header, NavIcons, NavLinks, NavLink } from "./NavbarStyles";
+import { Link } from "react-router-dom";
 
 function Navbar({ click, handleClick }) {
   return (
     <Header>
-      <a href="/">
+      <Link to="/">
         <img src={logo} alt="logo" />
-      </a>
+      </Link>
       <nav>
         <NavLinks>
           <li>
