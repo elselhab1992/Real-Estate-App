@@ -49,6 +49,11 @@ const Country = styled.p`
   border-radius: 5px;
 `;
 
+const Adress = styled.p`
+  color: ${(props) => props.theme.colors.secondary};
+  font-weight: ${(props) => props.theme.fontWeight.SemiBold};
+`;
+
 const RoomsContainer = styled.div`
   display: flex;
   justify-content: flex-start;
@@ -88,6 +93,7 @@ export {
   Img,
   Type,
   Country,
+  Adress,
   RoomsContainer,
   HouseInfo,
   Bed,

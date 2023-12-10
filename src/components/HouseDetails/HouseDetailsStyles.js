@@ -139,7 +139,7 @@ const RoomsContainer = styled.div`
   justify-content: flex-start;
   align-items: center;
   gap: 2rem;
-  color: ${(props) => props.theme.colors.primary};
+  color: ${(props) => props.theme.colors.grey};
   margin: 1rem 0;
 `;
 

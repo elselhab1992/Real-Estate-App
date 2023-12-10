@@ -5,6 +5,7 @@ import {
   Img,
   Type,
   Country,
+  Adress,
   RoomsContainer,
   Bed,
   Bath,
@@ -25,7 +26,7 @@ const House = ({ house }) => {
         <Type>{type}</Type>
         <Country>{country}</Country>
       </TypeContainer>
-      <h4>{address}</h4>
+      <Adress>{address}</Adress>
       <RoomsContainer>
         <HouseInfo>
           <span>
